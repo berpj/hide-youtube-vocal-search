@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Youtube Vocal Search",
+    "version": "1.0",
+    "description": "This extension hides the vocal search button on YouTube.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content_script.js"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "https://www.youtube.com/*"
+    ]
+}
